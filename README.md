@@ -245,8 +245,6 @@ counter++;
 The JavaScript engine can't add `1` to `undefined`, so it tells us the result is
 **Not a Number** — `NaN`. It's basically JavaScript doing this:
 
-![math](https://user-images.githubusercontent.com/17556281/28842772-effa3478-76cc-11e7-9d07-0c9a19b9b81b.gif)
-
 **_Top Tip_**: Much like `undefined`, you should never assign `NaN` as the value
 of a variable and instead let it be a signal that some weird maths are happening
 in your code.
@@ -399,20 +397,18 @@ to `Math.floor()`, which returns an integer between `0` and `9`. That's one less
 than the desired range (`1` to `10`), so we add one at the end of the equation.
 Try it out in the JS console!
 
-### Assignment
+## Instructions
 
-It's time for your first solo assignment since joining the Flatbook team! Fork
-and clone this repository manually, or use the `learn open` command in your
+Let's pretend it's time for your first solo assignment since joining a dev team!
+Fork and clone this repository manually, or use the `learn open` command in your
 terminal.
 
-Here at Flatbook HQ, we're a bit overwhelmed by all of the user data we've been
-collecting, and we need some help crunching the numbers.
+We have a lot of user data we've been collecting, and we need some help crunching
+the numbers.
 
 There are three challenges we need you to solve. Code your solution in
 `index.js`. We'll provide some brief instructions here, but you should really
 rely on the test failure messages to guide your code.
-
-## Instructions
 
 - When we started out, we assigned ID numbers sequentially to new users, so our
   first user's ID is `1`, second is `2`, third is `3`, and so on. That was fine
@@ -444,8 +440,6 @@ rely on the test failure messages to guide your code.
 
   - `randomUserID`, which should convert `randomInteger` into a valid ID number — an
     integer between `1000000001` and `1000000020`.
-
-![Good luck](https://user-images.githubusercontent.com/17556281/28846833-e671480c-76da-11e7-9285-17b5c592e065.gif)
 
 ## Resources
 
