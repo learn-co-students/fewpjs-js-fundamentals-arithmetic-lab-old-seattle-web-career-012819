@@ -1,5 +1,10 @@
 tags:
-- lab
+  - arithmetic
+  - math
+  - number
+  - operators
+  - lab
 languages:
-- JavaScript
-    
+  - javascript
+resources:
+  - 8

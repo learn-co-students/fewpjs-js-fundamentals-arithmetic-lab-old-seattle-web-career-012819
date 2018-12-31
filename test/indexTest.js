@@ -1,23 +1,54 @@
+const expect = chai.expect;
+spyOnNumberIsInteger.restore();
 
+describe('index.js', function() {
+  describe('newID', function() {
+    it('converts IDs from the old style to the new style', function() {
+      expect(newID).to.eq(1000000000 + oldID);
+    });
+  });
 
-describe("index.html", () => {
-  it("includes 'hello'", () => {
-    expect(document.querySelector('body').innerHTML).to.include('hello')
-  })
+  describe('ageIsValid', function() {
+    it("contains 'true' when the value in 'currentAge' is a valid integer", function() {
+      if (currentAgeIsInteger) {
+        expect(ageIsValid).to.be.true;
+      } else {
+        expect(ageIsValid).to.be.false;
+      }
+    });
 
-  it("includes div", () => {
-    expect(document.querySelector('body').innerHTML, "no empty div element found within body").to.include('<div></div>')
-  })
+    it("invokes 'Number.isInteger()'", function() {
+      expect(spyOnNumberIsInteger.called).to.be.true;
+    });
+  });
 
+  describe('randomNumber', function() {
+    it('contains a random number greater than or equal to 0 and less than 20', function() {
+      expect(randomNumber)
+        .to.be.at.least(0)
+        .but.below(20);
+    });
 
-})
+    it("invokes 'Math.random()'", function() {
+      expect(spyOnMathRandom.called).to.be.true;
+    });
+  });
 
+  describe('randomInteger', function() {
+    it("contains the value of 'randomNumber' rounded down to the nearest integer", function() {
+      const flooredRandomInteger = Math.floor(randomNumber);
 
-describe("index.js", () => {
-  it("exists", () => {
-    expect(testVar).to.exist
-    expect(testVar).to.deep.equal({}) //without .deep, {} does not equal {}
-    expect(testFunc).to.exist
-    expect(testFunc()).to.equal('hi')
-  })
-})
+      expect(randomInteger).to.eql(flooredRandomInteger);
+    });
+  });
+
+  describe('randomUserID', function() {
+    it('contains a random integer between 1000000001 and 1000000020', function() {
+      expect(Number.isInteger(randomUserID)).to.be.true;
+
+      expect(randomUserID)
+        .to.be.at.least(1000000001)
+        .and.at.most(1000000020);
+    });
+  });
+});
