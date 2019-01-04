@@ -2,13 +2,13 @@
 
 ## Introduction
 
-We're going to discuss a number of the common operators and objects you'll use to
+We're going to discuss a number of the common operators and objects we'll use to
 perform arithmetic operations in JavaScript.
 
-In your browser's JavaScript console, test out all of the examples in this lesson.
+In the browser's JavaScript console, we can test out all of the examples in this lesson.
 Remember that we can't redeclare variables previously declared with `const` or `let`,
-so you may have to refresh the page (which wipes away all declared variables) or 
-choose different variable names than those in the examples.
+so the page may have to be refreshed (which wipes away all declared variables) or 
+different variable names can be chosen than those in the examples.
 
 ## Objectives
 
@@ -53,7 +53,7 @@ than capable.
 
 ## Employ Operators to Perform Arithmetic and Assign Values to Variables
 
-JavaScript employs a pretty standard arsenal of arithmetic operators.
+JavaScript employs a pretty standard set of arithmetic operators.
 
 ### Arithmetic Operators
 
@@ -117,11 +117,12 @@ right number:
 
 ### Order of Operations
 
-JavaScript evaluates compound arithmetic operations by following the familiar
-order of operations that's taught in grade school math classes. Anything in
-parentheses has highest priority; exponentiation is second; then multiplication,
-division, and remainder; and, finally, addition and subtraction, in order from
-left to right.
+JavaScript evaluates compound arithmetic operations by following the standard order
+of operations used in basic math. Anything in parentheses has highest priority;
+exponentiation is second; then multiplication, division, and remainder; and, finally,
+addition and subtraction, in order from left to right. This is how the JavaScript
+compiler works. You can learn more about this in the **resources** section at the end
+of the lesson. For example:
 
 `( )` :arrow_right: `**` :arrow_right: `*` `/` `%` :arrow_right: `+` `-`
 
@@ -243,7 +244,7 @@ counter++;
 ```
 
 The JavaScript engine can't add `1` to `undefined`, so it tells us the result is
-**Not a Number** — `NaN`. It's basically JavaScript doing this:
+**Not a Number** — `NaN`. 
 
 **_Top Tip_**: Much like `undefined`, you should never assign `NaN` as the value
 of a variable and instead let it be a signal that some weird maths are happening
@@ -254,7 +255,7 @@ in your code.
 To satisfy most of our math needs, JavaScript provides several built-in objects
 that we can reference anywhere in JavaScript code, including `Number` and
 `Math`. With these objects, we can perform complex tasks like generating random
-number.
+numbers.
 
 ### `Number`
 
@@ -452,5 +453,6 @@ rely on the test failure messages to guide your code.
   - [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
   - [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 - [2ality — How numbers are encoded in JavaScript](http://2ality.com/2012/04/number-encoding.html)
+- [Back to Basics: JavaScript Operators, Conditionals & Functions](https://www.sitepoint.com/javascript-operators-conditionals-functions/)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-arithmetic-lab'>Arithmetic Lab</a> on Learn.co and start learning to code for free.</p>
