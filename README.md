@@ -1,5 +1,12 @@
 # JavaScript Fundamentals: Arithmetic Lab
 
+## Learning Goals
+
+*  Recognize the limitations of math in JavaScript
+*  Employ operators to perform arithmetic and assign values to variables
+*  Explain what `NaN` is
+*  Use built-in objects like `Math` and `Number` to accomplish complex tasks
+
 ## Introduction
 
 We're going to discuss a number of the common operators and objects we'll use to
@@ -9,13 +16,6 @@ In the browser's JavaScript console, we can test out all of the examples in this
 Remember that we can't redeclare variables previously declared with `const` or `let`,
 so the page may have to be refreshed (which wipes away all declared variables) or 
 different variable names can be chosen than those in the examples.
-
-## Objectives
-
-*  Recognize the limitations of math in JavaScript
-*  Employ operators to perform arithmetic and assign values to variables
-*  Explain what `NaN` is
-*  Use built-in objects like `Math` and `Number` to accomplish complex tasks
 
 ## Recognize the Limitations of Math in JavaScript
 
